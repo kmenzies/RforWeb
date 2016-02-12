@@ -32,7 +32,7 @@
 # Note that the piwik csv download seems to have a weird header in it that R can't handle loading.  
 cleanData <- function(data) {
   ##convert dates to be of the date format
-  data$Date <- as.Date(data$Date, format = "%d/%m/%y")
+  #data$Date <- as.Date(data$Date, format = "%d/%m/%y")
  
   ## convert seconds and percents to numeric type from characters
   found <- toFind(data, "rate")
